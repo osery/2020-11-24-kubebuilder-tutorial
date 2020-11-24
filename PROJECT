@@ -1,0 +1,7 @@
+domain: coffee.demo.purestorage.com
+repo: coffee.demo.purestorage.com
+resources:
+- group: beverage
+  kind: Coffee
+  version: v1
+version: "2"

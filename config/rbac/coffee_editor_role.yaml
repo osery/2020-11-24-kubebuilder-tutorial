@@ -1,0 +1,24 @@
+# permissions for end users to edit coffees.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: coffee-editor-role
+rules:
+- apiGroups:
+  - beverage.coffee.demo.purestorage.com
+  resources:
+  - coffees
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - beverage.coffee.demo.purestorage.com
+  resources:
+  - coffees/status
+  verbs:
+  - get

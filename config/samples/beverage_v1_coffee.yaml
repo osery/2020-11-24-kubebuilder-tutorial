@@ -1,0 +1,7 @@
+apiVersion: beverage.coffee.demo.purestorage.com/v1
+kind: Coffee
+metadata:
+  generateName: coffee-
+spec:
+  type: espresso
+  extraSugar: true
